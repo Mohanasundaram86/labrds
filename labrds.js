@@ -19,6 +19,7 @@ const conn = mysql.createConnection({
   host: 'labrds.csv5ovrnscx1.us-east-1.rds.amazonaws.com',
   port: 3306,
   user: 'admin', /* MySQL User */
+  connectionLimit : 1000, 
   password: 'Ezhil2020', /* MySQL Password */
   database: 'labrds' /* MySQL Database */
 });
